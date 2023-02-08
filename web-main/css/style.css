@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header, footer{
+    background-color: #222831;
+    color: white;
+    height: 60px;
+}
+
+main{
+    padding: 3.75rem;
+    min-height: 100vh;
+    width: 60vw;
+    margin:0 auto;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+}
+
+nav > ul > li{
+    width: 100%;
+    height: 100%; 
+}
+
+.active{
+    background-color: red;
+}
+
+nav > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 3,75rem;
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-size:250%;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    color: black;
+}
+
+.h2{
+    color: black;
+}
+
+.h2codm{
+    color: black;
+}
+
+section{
+    width: 100%;
+    padding: 2.5rem;
+}
+
+article{
+    width:100%;
+    margin:0 auto;
+    padding: 2.5rem;
+}
+
+.box{
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    padding: 0;
+    margin-bottom: 2.5rem;
+}
+
+.box > a > figure{
+    width: 100%;
+    height: 100%;
+}
+
+.box > a > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3.125rem;
+}
+
+.box > a > figure > img:hover{
+    transform: none;
+}
+
+.box > a > section{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding: 2.5rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, 80%,black);
+    border-radius: 3.125rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+figure{
+    margin-bottom: 2.5rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s transform;
+}
+
+img:hover{
+   transform: scale(1.05);
+}
+
+p{
+    margin-bottom: 2.5rem;
+    color: black;
+}
+.pfooter{
+    margin-bottom: 2.5rem;
+    color: white
+}
+
+.phome{
+    color: white;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+figcaption{
+    font-size: 80%;
+    font-style: italic;
+    font-weight: 400;
+    color: black;
+}
+
+audio{
+    display: block;
+    margin-top: 1.25rem;
+}
+
+video{
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border-radius: 5px;
+}
+
+.top{
+    width: 5rem;
+    height: 5rem;
+    background-color: #222831;
+    border: none;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom: 7.5rem;
+    right: 7.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.footercodmtext{
+    color: white;
+}
+
+footer > p{
+    width: 60vw;
+    margin:0 auto;
+    padding-left: 5rem;
+}
+
+@media screen and (max-width:62.5rem){
+    main{
+        width: 80vw;
+    }
+    footer > p{
+        width: 80vw;
+    }
+    img:hover{
+        transform: none;
+    }
+    
+    .top{
+        width: 3.75rem;
+        height: 3.75rem;
+        bottom: 3.75rem;
+        right: 3.75rem;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav > ul{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    body{
+        font-size: 1rem;
+    }
+    main{
+        width:100vw;
+        padding: 1.25rem;
+    }
+    h1{
+        font-size: 180%;
+    }
+    footer > p{
+        width:100vw; 
+        padding-left: 3.75rem; 
+    }
+}
